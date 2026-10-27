@@ -532,6 +532,11 @@ curl https://nine1-terraform-script.onrender.com/terraform/state
 
 *GET http://localhost:9898/terraform/output - Browser JSON - 200 OK - Returns {"vpc_id":"vpc-0a1b2c3d","instance_ip":"54.12.34.56","rds_endpoint":"raviteja91.c123.ap-south-1.rds.amazonaws.com","s3_bucket":"raviteja-terraform-91"} - Proof of terraform output - Outputs from applied resources - vpc_id, instance public_ip, rds endpoint, s3 bucket name - Same as real `terraform output`*
 
+### Demo 9 – Render Live - Deploy Succeeded - LIVE
+![Demo9 Render](screenshots/demo9.png)
+
+*Render Dashboard - 91-terraform-script - STATUS: Deploy succeeded | Live - DURATION: 2m24s - DEPLOYED: Oct 27, 2026 at 5:25:05 PM GMT+5:30 - TRIGGER: First Deploy - SOURCE: commit bf0acf4 - Logs: Tomcat started on port 9898 - Started Application in 83.4 seconds (process running for 92.762) - Your service is live - Available at your primary URL https://nine1-terraform-script.onrender.com - Initializing Spring DispatcherServlet 'dispatcherServlet' - Completed initialization in 99 ms - Proof of Live Deployment on Internet - Docker Multi-Stage + Terraform Simulation working on Render*
+
 ---
 
 # 🧪 API Testing Examples
