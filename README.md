@@ -1,24 +1,24 @@
 # 🚀 Project 91 – Terraform Script + IaC Simulation | Full Stack DevOps | Terraform Ready
 
-[Java 21](https://img.shields.io/badge/Java-21-E76F00?logo=openjdk&logoColor=white)
-[Spring Boot 3.2.5](https://img.shields.io/badge/Spring%20Boot-3.2.5-6DB33F?logo=springboot&logoColor=white)
-[Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)
-[Terraform](https://img.shields.io/badge/Terraform-1.7.0-7B42BC?logo=terraform&logoColor=white)
-[AWS EC2](https://img.shields.io/badge/AWS-EC2-FF9900?logo=amazonec2&logoColor=white)
-[AWS S3](https://img.shields.io/badge/AWS-S3-569A31?logo=amazons3&logoColor=white)
-[AWS RDS](https://img.shields.io/badge/AWS-RDS-527FFF?logo=amazonrds&logoColor=white)
-[AWS VPC](https://img.shields.io/badge/AWS-VPC-FF9900?logo=amazon&logoColor=white)
-[MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)
-[H2 Database](https://img.shields.io/badge/H2-In--Memory-1024D6?logo=h2&logoColor=white)
-[Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?logo=ubuntu&logoColor=white)
-[Maven](https://img.shields.io/badge/Maven-3.9+-C71A36?logo=apachemaven&logoColor=white)
-[Tomcat](https://img.shields.io/badge/Apache%20Tomcat-10.1.20-D4AF00?logo=apachetomcat&logoColor=white)
-[Port](https://img.shields.io/badge/Port-9898-7B42BC)
-[Status](https://img.shields.io/badge/Status-Terraform%20IaC%20Ready-7B42BC)
+![Java 21](https://img.shields.io/badge/Java-21-E76F00?logo=openjdk&logoColor=white)
+![Spring Boot 3.2.5](https://img.shields.io/badge/Spring%20Boot-3.2.5-6DB33F?logo=springboot&logoColor=white)
+![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-1.7.0-7B42BC?logo=terraform&logoColor=white)
+![AWS EC2](https://img.shields.io/badge/AWS-EC2-FF9900?logo=amazonec2&logoColor=white)
+![AWS S3](https://img.shields.io/badge/AWS-S3-569A31?logo=amazons3&logoColor=white)
+![AWS RDS](https://img.shields.io/badge/AWS-RDS-527FFF?logo=amazonrds&logoColor=white)
+![AWS VPC](https://img.shields.io/badge/AWS-VPC-FF9900?logo=amazon&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)
+![H2 Database](https://img.shields.io/badge/H2-In--Memory-1024D6?logo=h2&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?logo=ubuntu&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-3.9+-C71A36?logo=apachemaven&logoColor=white)
+![Tomcat](https://img.shields.io/badge/Apache%20Tomcat-10.1.20-D4AF00?logo=apachetomcat&logoColor=white)
+![Port](https://img.shields.io/badge/Port-9898-7B42BC)
+![Status](https://img.shields.io/badge/Status-Terraform%20IaC%20Ready-7B42BC)
 
 **Live URL:** https://nine1-terraform-script.onrender.com/
 
-[[Live](https://img.shields.io/badge/Live-Render-brightgreen?style=for-the-badge&logo=render)](https://nine1-terraform-script.onrender.com)
+[![Live](https://img.shields.io/badge/Live-Render-brightgreen?style=for-the-badge&logo=render)](https://nine1-terraform-script.onrender.com)
 
 Project 91 - Part of Java 100 Projects Challenge - DevOps + Cloud Tier
 ---
@@ -493,42 +493,42 @@ curl https://nine1-terraform-script.onrender.com/terraform/state
 # 📸 Screenshots
 
 ### Demo 1 – Browser - GET /terraform/init - Terraform Initialized
-[Demo1 Init](screenshots/demo1.png)
+![Demo1 Init](screenshots/demo1.png)
 
 *GET http://localhost:9898/terraform/init - Browser JSON - 200 OK - Returns {"terraformVersion":"1.7.0","provider":"aws, random, local","backend":"local - terraform.tfstate","message":"Terraform initialized in workspace: default","status":"Initialized"} - Proof of Terraform init simulation - Downloads provider + configures backend*
 
 ### Demo 2 – Browser - GET /terraform/resources?type=aws_instance&name=web-server - id 1 planned
-[Demo2 EC2](screenshots/demo2.png)
+![Demo2 EC2](screenshots/demo2.png)
 
 *GET http://localhost:9898/terraform/resources?type=aws_instance&name=web-server - Browser JSON - 200 OK - Returns {"id":1,"resourceType":"aws_instance","resourceName":"web-server","provider":"aws","status":"planned","tfState":"managed"} - Proof of resource "aws_instance" "web-server" { ami="ami-ubuntu" instance_type="t2.micro" } in main.tf*
 
 ### Demo 3 – Browser - GET /terraform/resources?type=aws_s3_bucket&name=raviteja-bucket - id 2 planned
-[Demo3 S3](screenshots/demo3.png)
+![Demo3 S3](screenshots/demo3.png)
 
 *GET http://localhost:9898/terraform/resources?type=aws_s3_bucket&name=raviteja-bucket - Browser JSON - 200 OK - Returns {"id":2,"resourceType":"aws_s3_bucket","resourceName":"raviteja-bucket","provider":"aws","status":"planned"} - Proof of resource "aws_s3_bucket" "b" { bucket="raviteja-terraform-91" }*
 
 ### Demo 4 – Browser - GET /terraform/resources?type=aws_db_instance&name=rds-mysql - id 3 planned
-[Demo4 RDS](screenshots/demo4.png)
+![Demo4 RDS](screenshots/demo4.png)
 
 *GET http://localhost:9898/terraform/resources?type=aws_db_instance&name=rds-mysql - Browser JSON - 200 OK - Returns {"id":3,"resourceType":"aws_db_instance","resourceName":"rds-mysql","provider":"aws","status":"planned"} - Proof of resource "aws_db_instance" "rds" { engine="mysql" instance_class="db.t3.micro" }*
 
 ### Demo 5 – Browser - GET /terraform/plan - add 3 to add - 0 change 0 destroy
-[Demo5 Plan](screenshots/demo5.png)
+![Demo5 Plan](screenshots/demo5.png)
 
 *GET http://localhost:9898/terraform/plan - Browser JSON - 200 OK - Returns {"add":3,"change":0,"destroy":0,"message":"Plan: 3 to add, 0 to change, 0 to destroy","resources":[{"id":1,"resourceType":"aws_instance","status":"planned"},...]} - Proof of terraform plan - Shows 3 resources to add - Same as real `terraform plan` output*
 
 ### Demo 6 – Browser - GET /terraform/apply - Apply complete 3 added version 1
-[Demo6 Apply](screenshots/demo6.png)
+![Demo6 Apply](screenshots/demo6.png)
 
 *GET http://localhost:9898/terraform/apply - Browser JSON - 200 OK - Returns {"appliedCount":3,"message":"Apply complete! Resources: 3 added","version":1,"timestamp":"2026-10-27T17:05:38.2119184"} - Proof of terraform apply - Changes status planned -> applied - version 1 - timestamp - Same as real `terraform apply` Creating... Creation complete*
 
 ### Demo 7 – Browser - GET /terraform/state - totalResources 3 applied terraform_version 1.7.0 version 1
-[Demo7 State](screenshots/demo7.png)
+![Demo7 State](screenshots/demo7.png)
 
 *GET http://localhost:9898/terraform/state - Browser JSON - 200 OK - Returns {"lastApply":"2026-10-27T17:05:38.2119184","totalResources":3,"workspace":"default","serial":1,"resources":[{"id":1,"resourceType":"aws_instance","status":"applied"},...],"terraform_version":"1.7.0","version":1} - Proof of terraform.tfstate - Contains version, serial, resources, workspace - Stored locally in H2, in real AWS stored in S3 backend*
 
 ### Demo 8 – Browser - GET /terraform/output - vpc_id + instance_ip + rds_endpoint + s3_bucket
-[Demo8 Output](screenshots/demo8.png)
+![Demo8 Output](screenshots/demo8.png)
 
 *GET http://localhost:9898/terraform/output - Browser JSON - 200 OK - Returns {"vpc_id":"vpc-0a1b2c3d","instance_ip":"54.12.34.56","rds_endpoint":"raviteja91.c123.ap-south-1.rds.amazonaws.com","s3_bucket":"raviteja-terraform-91"} - Proof of terraform output - Outputs from applied resources - vpc_id, instance public_ip, rds endpoint, s3 bucket name - Same as real `terraform output`*
 
